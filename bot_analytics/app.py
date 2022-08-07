@@ -5,9 +5,14 @@ import plotly.express as px
 import plotly.graph_objs as go
 import pandas as pd
 from utils import read_yaml
+import dash_auth
+from users import USERNAME_PASSWORD_PAIRS
 
 app = Dash(__name__)
-
+auth = dash_auth.BasicAuth(
+    app,
+    USERNAME_PASSWORD_PAIRS
+)
 config = read_yaml('config/connect_bd.yaml')
 
 
