@@ -2,4 +2,5 @@ mysql-connector-python~=8.0.30
 plotly~=5.9.0
 pandas~=1.4.3
 dash~=2.6.1
+dash-auth == 1.4.1
 PyYAML~=6.0
